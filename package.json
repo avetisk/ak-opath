@@ -1,0 +1,41 @@
+{
+  "name": "ak-opath",
+  "version": "0.0.1",
+  "description": "access nested Object key with array of keys",
+  "keywords": [
+    "path",
+    "object",
+    "key",
+    "array"
+  ],
+  "license": "MIT",
+  "author": "Avétis KAZARIAN",
+  "contributors": "Avétis KAZARIAN",
+  "homepage": "https://github.com/avetisk/ak-opath",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/avetisk/ak-opath.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avetisk/ak-opath/issues"
+  },
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "make test"
+  },
+  "engines": {
+    "node": "~0.10.22"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "~3.12.0",
+    "karma": "~0.11.9",
+    "karma-mocha": "~0.1.1",
+    "karma-safari-launcher": "~0.1.1",
+    "karma-firefox-launcher": "~0.1.2",
+    "karma-chrome-launcher": "~0.1.2",
+    "envify": "~1.0.1",
+    "karma-coverage": "~0.1.4",
+    "istanbul": "~0.2.1"
+  }
+}
