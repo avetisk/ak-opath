@@ -115,6 +115,9 @@ describe('opath = new Opath(obj, childKey)', function () {
     assert.strictEqual(opath(['home', 'avetis', '\\\\\\', 'good']), objChildKey['children']['home']['children']['avetis']['children']['\\\\\\']['children']['good']);
     assert.strictEqual(opath(['home', 'avetis', 'my projects', 'falsePositive']), undefined);
     assert.strictEqual(opath(['home', 'avetis', 'do-not-exist', 'failMePlease']), undefined);
+    assert.strictEqual(opath(['home', 'avetis', 'my projects', 'falsePositive'], true), undefined);
+    assert.strictEqual(opath(['home', 'avetis', 'do-not-exist', 'failMePlease'], true), objChildKey['children']['home']['children']['avetis']['children']['do-not-exist']['children']['failMePlease']);
+    assert.notStrictEqual(objChildKey['children']['home']['children']['avetis']['children']['do-not-exist']['children']['failMePlease'], undefined);
   });
   it('should return reference objChildKey', function () {
     var opath = new Opath(objChildKey, 'children');

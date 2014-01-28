@@ -1,6 +1,6 @@
 {
   "name": "ak-opath",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "access nested Object key with array of keys",
   "keywords": [
     "path",
