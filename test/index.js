@@ -2,7 +2,7 @@
 
 'use strict';
 
-var Opath = require('../');
+var Opath = process.env.AK_OPATH_TEST_COVERAGE ? require('../lib-cov/opath') : require('../');
 var assert = require('assert');
 var obj = {
   'home': {
